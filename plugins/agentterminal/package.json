@@ -1,0 +1,27 @@
+{
+    "name": "@aicz/agentterminal",
+    "version": "1.0.0",
+    "description": "AgentTerminal plugin for ElizaOS: sends an English query to artificialcz.com for real-time context or data.",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "test": "echo 'No tests at this time.'"
+    },
+    "dependencies": {
+      "node-fetch": "^2.6.9"
+    },
+    "devDependencies": {
+      "typescript": "^4.9.5"
+    },
+    "type": "module",
+    "agentConfig": {
+      "pluginType": "elizaos:plugin:1.0.0",
+      "pluginParameters": {
+        "AGENTTERMINAL_ENDPOINT": {
+          "type": "string",
+          "description": "Endpoint for sending English queries.  https://artificialcz.com/api0/agentterminal/"
+        }
+      }
+    }
+  }
+  

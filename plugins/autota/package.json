@@ -1,0 +1,27 @@
+{
+    "name": "@aicz/autota",
+    "version": "1.0.0",
+    "description": "AutoTA: Generate or request technical analysis charts using an English text query.",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "test": "echo 'No tests at this time.'"
+    },
+    "dependencies": {
+      "node-fetch": "^2.6.9"
+    },
+    "devDependencies": {
+      "typescript": "^4.9.5"
+    },
+    "type": "module",
+    "agentConfig": {
+      "pluginType": "elizaos:plugin:1.0.0",
+      "pluginParameters": {
+        "AUTOTA_ENDPOINT": {
+          "type": "string",
+          "description": "Endpoint for generating TA charts. Defaults to https://artificialcz.com/api0/autota/"
+        }
+      }
+    }
+  }
+  

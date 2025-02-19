@@ -1,0 +1,25 @@
+{
+    "name": "@aicz/sentience",
+    "version": "0.8.1",
+    "description": "An experimental plugin that attempts self-improvement by rewriting specified files, guided by criticisms in the agent runtime. Not fully implemented.",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "test": "echo 'No tests yet.'"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "^4.9.5"
+    },
+    "type": "module",
+    "agentConfig": {
+      "pluginType": "elizaos:plugin:1.0.0",
+      "pluginParameters": {
+        "SENTIENCE_FILE_PATHS": {
+          "type": "string",
+          "description": "Comma-separated paths to files that the agent might attempt to rewrite. (Not recommended for production.)"
+        }
+      }
+    }
+  }
+  

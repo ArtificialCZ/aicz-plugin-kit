@@ -1,0 +1,12 @@
+{
+  "name": "aicz-eliza-plugins-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:plugins",
+    "build:plugins": "npm run build:agentterminal && npm run build:autota && npm run build:sentience",
+    "build:agentterminal": "cd plugins/agentterminal && npm run build",
+    "build:autota": "cd plugins/autota && npm run build",
+    "build:sentience": "cd plugins/sentience && npm run build"
+  }
+}
