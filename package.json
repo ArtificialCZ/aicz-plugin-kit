@@ -1,5 +1,5 @@
 {
-  "name": "aicz-eliza-plugins-monorepo",
+  "name": "aicz-plugin-kit",
   "version": "1.0.0",
   "private": true,
   "scripts": {
